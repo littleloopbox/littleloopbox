@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Loop Box - Store Today, Re-love Tomorrow</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #EDE5D9; color: #736F68; margin: 0; padding: 0; }
+        header { background-color: #A9C3A7; padding: 20px; text-align: center; }
+        h1 { color: #92A8C7; }
+        section { padding: 20px; max-width: 800px; margin: 0 auto; }
+        .pricing-table { width: 100%; border-collapse: collapse; }
+        .pricing-table th, .pricing-table td { border: 1px solid #736F68; padding: 10px; text-align: left; }
+        button { background-color: #A9C3A7; color: white; border: none; padding: 10px 20px; cursor: pointer; }
+        button:hover { background-color: #92A8C7; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://imgur.com/a/XeaJUPh" alt="Little Loop Box Logo" style="max-width: 200px;">
+        <h1>Store Today. Re-love Tomorrow.</h1>
+        <p>The sustainable way to save your baby’s outgrown clothes for the next little one — without the clutter.</p>
+        <button onclick="location.href='#waitlist'">Join the Waitlist</button>
+        <button onclick="location.href='#how-it-works'">How It Works</button>
+    </header>
+
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <ol>
+            <li><strong>Order Your Box:</strong> Choose Small ($89/yr, 0-6m), Medium ($139/yr, 6-18m), or Large ($199/yr, 18m-4T). We send it prepaid.</li>
+            <li><strong>Schedule Pickup:</strong> Loop Mamas pick up from your porch on the 1st or 3rd Saturday. No shipping hassle.</li>
+            <li><strong>Store & Access:</strong> We catalog every item with photos in your app (size, gender, season). Request back anytime.</li>
+            <li><strong>Donate When Done:</strong> One-tap Blessings Box — get $30-50 credit, we give to families in need.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Pricing (Annual – Best Value)</h2>
+        <table class="pricing-table">
+            <tr><th>Size</th><th>Price</th><th>Fits</th></tr>
+            <tr><td>Small</td><td>$89/year</td><td>0-6m or one season</td></tr>
+            <tr><td>Medium</td><td>$139/year</td><td>6-18m or two seasons (Most Popular)</td></tr>
+            <tr><td>Large</td><td>$199/year</td><td>18m-4T or full year</td></tr>
+        </table>
+        <p>Add-Ons: Cleaning $39/box · Seasonal Swap +$49/yr · Vacuum-Seal $19/box</p>
+    </section>
+
+    <section>
+        <h2>Blessings Box</h2>
+        <p>When you're truly done, donate your box for $30-50 credit. We sanitize and bless another family — you'll even get a thank-you photo!</p>
+    </section>
+
+    <section id="waitlist">
+        <h2>Be a Founding Member</h2>
+        <p>$29 deposit locks your spot + first box discount.</p>
+        <form action="your-stripe-checkout-url" method="POST">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <button type="submit">Pay $29 Deposit</button>
+        </form>
+    </section>
+
+    <footer style="text-align: center; padding: 10px; background-color: #A9C3A7;">
+        <p>&copy; 2025 Little Loop Box. All rights reserved.</p>
+    </footer>
+</body>
+</html>
